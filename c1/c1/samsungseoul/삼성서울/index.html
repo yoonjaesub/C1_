@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼정서울병원</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic" rel="stylesheet">
+    <style>
+        * {margin: 0; padding: 0;}
+        body, html { width: 100%; min-width: 1280px; font-family: 'Nanum Gothic', sans-serif;}
+        ul { list-style: none;}
+        a { text-decoration: none;}
+        .wrap {width: 100%;}
+        .hd {width: 100%; clear: both;}
+        .hd_top_wrap{width: 1280px; margin: 0 auto; }
+        .tnb { float: right;display: block; margin: 0 auto;}
+        .tnb li {text-align: center; float: left; height: 20px; line-height: 50px; margin-left: 15px;}
+        .tnb li a {color: black;}
+        .tnb li a::after{ content: "|"; padding-left: 16px;}
+        .tnb li a:first-child::before {content: "";}
+        .xi-search { color: #3378c1;}
+        .login {cursor: pointer;}
+        /* .login {border:1px solid #111} */
+        .hd_bottom_wrap { clear: both; height:100px; width: 1280px; margin: 0 auto;}
+        .hd_bottom_menu {position: relative;}
+        .logo {margin: 0 auto; padding-right: 300px;}
+
+
+        /* .gnb .mainmenu :hover { border-bottom: 3px solid #3378c1; color:#3378c1;}
+        .gnb .mainmenu {float: right; margin-top: 20px;}
+        .hd_bottom_menu .mainmenu {float: right; margin-top: 20px;} */
+
+
+        .conterns {clear: both; width: 1920px; margin: 0 auto;}
+        .vb {width: 100%; overflow: hidden; height: 550px;}
+        .ban {width: 400%;}
+        .ban li {width: 25%; float: left;}
+        .con_menu {clear: both; width: 1280px; height: 450px; margin: 0 auto; position: relative; display: block;}
+        .con_menu_bar li{display: block; float: left;  margin: 2px; }
+        .con_menu_bar li a {display: block; width: 296px; color: white; text-align: center;height: 196px;}
+        .con_menu_bar li a:hover {border:4px solid yellow; color: yellow;}
+        .con_m_tit { display: block; width: 300px;height: 50px; padding-top: 30px;}
+
+        .con_find {background-image: url("/c1/samsungseoul/img/con_ico_find.png"); width: 300px; height: 200px; display: block;}
+        .con_online {background-image: url("/c1/samsungseoul/img/con_ico_online.png"); width: 300px; height: 200px; display: block;}
+        .con_check {background-image: url("/c1/samsungseoul/img/con_ico_check.png"); width: 300px; height: 200px; display: block;}
+        .con_call {background-image: url("/c1/samsungseoul/img/con_ico_call.png"); width: 300px; height: 200px; display: block;}
+        .con_video {background-image: url("/c1/samsungseoul/img/con_ico_video.jpg"); width: 300px; height: 200px; display: block;}
+        .con_blog {background-image: url("/c1/samsungseoul/img/blog_img_1.jpg"); width: 300px; height: 200px; display: block;}
+        .con_paper {background-image: url("/c1/samsungseoul/img/con_ico_paper.png"); width: 300px; height: 200px; display: block;}
+        .con_inquiry {background-image: url("/c1/samsungseoul/img/con_ico_inquiry.png"); width: 300px; height: 200px; display: block;}
+
+        .con_bottom_menu {clear: both; width: 100vw; margin: 0 auto; height: 400px; background: #f7f7f7; }
+        .con_bot_tit {margin: 0; display: block; margin: 0 auto; width: 1280px; height: 90px;}
+        .con_bot_tit li {float: left; margin-right: 140px; margin-top: 50px;}
+        .con_bot_tit .cbl_tit { font-weight: 600; font-size: 22px;}
+        .con_bot_tit a {display: block; width: 60px; height: 30px; border: 1px solid #e4e7ea; text-align: center; color:black; background: #e4e7ea; margin-left: 60px;}
+        .con_bot_menu {clear: both; width: 1280px; margin: 0 auto;}
+        .con_bot_left { display: block; float: left; width: 470px; height: 200px; border: 1px solid #ccc; background: white;}
+        .con_bot_left li {height: 30px; text-align: left; float: left; margin-right: 10px; margin-top: 10px;}
+        .con_bot_left li a {color: black;}
+        .cbl_notice a{ display: block; border:1px solid tomato; width: 40px; text-align: center; height: 20px; color: white; background: tomato; border-radius: 4px; margin-left: 10px;}
+        .cbl_edu a {display: block; border:1px solid cornflowerblue; width: 40px; text-align: center; height: 20px; color: white; background:cornflowerblue; border-radius: 4px; margin-left: 10px;}
+        /* .con_bot_left li:nth-child(3n) {margin-right: 40px;} */
+        .cbl_txt {display: block; width: 300px; height: 24px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+
+        /* .cbr_ico { display: block;background-image: url("./c1/samsungseoul/img/cbr_ico.png"); background-repeat: no-repeat; text-indent: 9999px; }
+        .come {width: -100px; height: -300px; background-position: 0, 0; margin: 0 auto; position: absolute;} */
+        .con_bot_right { display: block; float: right; width: 670px; height: 200px; border: 1px solid #ccc; background: white;}
+        .con_bot_right li {display: block; width: 100px; height: 65px; float: left; margin-left: 11px; margin-top: 20px; text-align: center;}
+        .con_bot_right li a {display: block; font-size: 16px; color: black;}
+
+        
+
+
+        .ft {clear: both; width: 100vw; background: #595f6a; height: 300px;}
+        .ft_top_wrap {clear: both; width: 1280px; height: 80px; margin: 0 auto; display: block; border-bottom: 1px solid darkgray;}
+        .ft_top_wrap_left {float: left; display: block; width: 860px; height: 60px;}
+        .ft_top_menu_l li {float: left; margin-right: 20px; margin-top: 30px;}
+        .ft_top_menu_l li a {color: white; font-size: 14;}
+        .ft_top_menu_l li a:hover {color:#7498dc;}
+        .ft_top_menu_l li a::after{ content: "|"; padding-left: 16px;}
+        .ft_top_wrap_right { float: right; display: block; width: 400px; height: 60px;}
+        .ft_top_menu_r li {float: left; margin-left: 50px; margin-top: 30px;}
+        .ft_top_menu_r li a {color: white; font-size: 14;}
+        .ft_bottom_wrap {clear: both; width: 1280px; margin: 0 auto;}
+        .ft_bottom_wrap_left {width: 1100px; height: 50px; display: block; }
+        .ft_bottom_menu_left li{float: left; margin-right: 15px; margin-top: 20px; margin-bottom: 20px;}
+        .ft_bottom_menu_left li a {color: #ccc; font-size: 13px;}
+        .ft_bottom_menu_left .privacy {color:#7498dc;}
+        .ft_bottom_menu_left li a::after { content: "|"; padding-left: 6px;}
+        .ft_bottom_menu_left li a:hover {color: #7498dc;}
+        .copyright {clear: both; margin-top: 5px; display: block; width: 1000px; height: 20px; font-size: 12px; color: #bbb;}
+
+        .ft_bottom_wrap_right {float: right; display: block; width: 200px; height: 70px; margin: 0 auto;} 
+        .ft_bottom_wrap_right li a{float: left; text-align: center;margin-left: 20px;}
+        
+        .gnb {clear: both; width: 1280px; float: right; height: 80px;margin-top: 50px; position: relative;}
+        .gnb li { float: left; margin-left:40px; font-size: 20px; font-weight: 600; color: ;}
+        .gnb li a {color: black; display: block; width: 120px; height: 78px; margin: 0 auto; text-align: center;}
+        .gnb li:hover a.mainmenu {border-bottom: 2px solid #3378c1;}
+        .gnb ul {float: right; }
+        .gnb li .sub { display:block;  position:absolute; z-index:999; left: 0; top: 80px; background: white; width: 1280px; color: #3378c1; height: 0; overflow: hidden;}
+        .gnb li:hover .sub { display:block; width: 1280px; height: 400px; transition-duration: 0.8s; border-top: 1px solid #595f6a;}
+        .gnb > ul > li > a { text-align:center;}
+        .gnb .sub a{float: left;}
+        .gnb .sub dt { text-align: left; margin-top: 30px; }
+        .sub_menu { display: block; width: 1280px; height: 80px; border-bottom: 1px solid #3378c1;}
+        .gnb .sub a { color: #3378c1; font-size: 13px; display: block; width: 136px; height: 30px; margin-top: 30px;}
+        .gnb .sub dd a:hover::before {content: "▶  ";}
+        .gnb .sub .cate_btn {display: block; width: 100px; height: 14px; border: 1px solid #3378c1; height: 30px; line-height: 30px; font-size: 12px;}
+        .cate_s {clear: both; display: block; width: 136px; height: 300px; position: fixed; top: 250px; left: 350px;}
+        .cate_s li a {text-align: left;}
+
+
+    </style>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="/c1/samsungseoul/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_top_wrap">
+                <nav class="tnb">
+                    <ul class="hd_top_menu">
+                        <li><a href="" >병원소개</a></li>
+                        <li><a href="">ENG</a></li>
+                        <li><a href="">中國語</a></li>
+                        <li><a href="">RUSSAN</a></li>
+                        <li><a href=""><i class="xi-search"></i></a></li>
+                        <li><a onclick="login_call()" class="login">로그인</a></li>
+                        <li><a href="join.html" class="login">회원가입</a></li>
+                    </ul>
+                </nav>
+                <script>
+                    function login_call(){
+                        window.open("login.html", "child", "width=1200, height=600, top=100, left=300");
+                    }
+                </script>
+            </div>
+            <div class="hd_bottom_wrap">
+                <nav class="gnb">
+                    <ul class="hd_bottom_menu">
+                        <li><a href="index.html" class="logo">
+                            <img src="/c1/samsungseoul/img/logo.png" alt="기업 로고">
+                        </a></li>
+                        <li>
+                            <a href="" class="mainmenu">진료예약</a>
+                            <ul class="sub">
+                                <li class="sub_menu">
+                                    <dl class="cate">
+                                        <dt class="cate_tit">진료예약</dt>
+                                        <a href="" class="cate_btn">서비스 메인보기</a>
+                                        <dd><a href="">진료과/의료진</a></dd>
+                                        <dd><a href="">진료일정 검색</a></dd>
+                                        <dd><a href="">예약하기</a></dd>
+                                        <dd><a href="">진료예약안내</a></dd>
+                                        <dd><a href="">비급여 진료비안내</a></dd>
+                                        <dd><a href="">수납 및 환불안내</a></dd>
+                                        <dd><a href="">제증명/의무기록발급</a></dd>   
+
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="mainmenu">건강정보</a>
+                            <ul class="sub">
+                                <li class="sub_menu">
+                                    <dl class="cate">
+                                        <dt class="cate_tit">건강정보</dt>
+                                        <a href="" class="cate_btn">서비스 메인보기</a>
+                                        <dd><a href="">질환정보</a></dd>
+                                        <dd><a href="">영양정보</a></dd>
+                                        <dd><a href="">운동정보</a></dd>
+                                        <dd><a href="">검사정보</a></dd>
+                                        <dd><a href="">자녀 인성교육정보</a></dd>
+                                        <dd><a href="">건강이야기</a></dd>
+                                        <dd><a href="">건강교실</a></dd>
+                                        <dd><a href="">건강자료실</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="mainmenu">진료차트</a>
+                            <ul class="sub">
+                                <li class="sub_menu">
+                                    <dl class="cate">
+                                        <dt class="cate_tit">진료차트</dt>
+                                        <a href="" class="cate_btn">서비스 메인보기</a>
+                                        <dd><a href="">진료스케쥴</a></dd>
+                                        <dd><a href="">진료 조회</a></dd>
+                                        <dd><a href="">건강검진조회</a></dd>
+                                        <dd><a href="">발급 서비스</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="mainmenu">나눔소통</a>
+                            <ul class="sub">
+                                <li class="sub_menu">
+                                    <dl class="cate">
+                                        <dt class="cate_tit">나눔소통</dt>
+                                        <a href="" class="cate_btn">서비스 메인보기</a>
+                                        <dd><a href="">나눔활동</a></dd>
+                                        <dd><a href="">나눔참여</a></dd>
+                                        <dd><a href="">행복스토리</a></dd>
+                                        <dd><a href="">칭찬합시다</a></dd>
+                                        <dd><a href="">고객의 소리</a></dd>
+                                        <dd><a href="">건강상담</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="mainmenu">병원안내</a>
+                            <ul class="sub">
+                                <li class="sub_menu">
+                                    <dl class="cate">
+                                        <dt class="cate_tit">병원안내</dt>
+                                        <a href="" class="cate_btn">서비스 메인보기</a>
+                                        <dd><a href="">외래진료안내</a></dd>
+                                        <dd><a href="">입원생활안내</a></dd>
+                                        <dd><a href="">중환자실 이용안내</a></dd>
+                                        <dd><a href="">가정간호안내</a></dd>
+                                        <dd><a href="">응급진료안내</a></dd>
+                                        <dd><a href="">진료협력/의뢰</a></dd>
+                                        <dd><a href="">병원소식</a></dd>
+                                        <dd><a href="">편의가이드</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="contents">
+            <figure class="vb">
+                <ul class="ban">
+                    <li><a href=""><img src="/c1/samsungseoul/img/main1.jpg" alt="배너이미지"></a></li>
+                    <li><a href=""><img src="/c1/samsungseoul/img/main2.jpg" alt="배너이미지"></a></li>
+                    <li><a href=""><img src="/c1/samsungseoul/img/main3.jpg" alt="배너이미지"></a></li>
+                </ul> 
+            </figure>
+            <div class="con_menu">
+                <ul class="con_menu_bar">
+                    <li class="con_find"><a href=""><h3 class="con_m_tit">의료진/진료과 검색</h3>진료 전, 삼성서울병원 <br> 전문의료진을 검색해보세요.</a></li>
+                    <li class="con_online"><a href=""><h3 class="con_m_tit">온라인 진료예약</h3>로그인 없이도 <br>진료 예약을 편리하게 하실 수 있습니다.</a></li>
+                    <li class="con_check"><a href=""><h3 class="con_m_tit">처음진료 빠른예약</h3>연락처를 남겨주시면 해피콜을 전문 통해<br> 빠른 예약을 도와드립니다.</a></li>
+                    <li class="con_call"><a href=""><h3 class="con_m_tit">건강검진 빠른예약</h3>연락처를 남겨주시면 검진 상담 전문<br> 간호사가 빠른 예약을 도와드립니다.</a></li>
+                    <li class="con_video"><a href=""><h3 class="con_m_tit">[병원소개]</h3>한 눈에 보는 삼성서울병원 모바일 웹</a></li>
+                    <li class="con_blog"><a href=""><h3 class="con_m_tit">[건강정보]</h3>영상 내용 설명글</a></li>
+                    <li class="con_paper"><a href=""><h3 class="con_m_tit">의무기록 사본발급</h3>로그인 하신 후<br> 사본발급 신청 가능합니다.</a></li>
+                    <li class="con_inquiry"><a href="" ><h3 class="con_m_tit"></h3> 나의 진료예약 및 진료이력을 조회해보세요.</a></li>
+                </ul>
+            </div>
+            <div class="con_bottom_menu">
+                <div class="con_bot_tit">
+                    <ul>
+                        <li class="cbl_tit">뉴스 · 공지 · 학술행사</li>
+                        <li><a href="">더보기</a></li>
+                        <li class="cbl_tit">편의가이드</li>
+                </div>
+                <div class="con_bot_menu">
+                    <ul class="con_bot_left">
+                        <li class="cbl_notice"><a href="">공지</a></li>
+                        <li><a href="" class="cbl_txt">삼성서울병원 6월2일부터 정상운영합니다.</a></li>
+                        <li><a href="">2020.06.01</a></li>
+                        <li class="cbl_notice"><a href="">공지</a></li>
+                        <li><a href="" class="cbl_txt">코로나바이러스감염증-19 확산에 따른 내원객 협조 안내</a></li>
+                        <li><a href="">2020.02.25</a></li>
+                        <li class="cbl_edu"><a href="">학술</a></li>
+                        <li><a href="" class="cbl_txt">2020 Webinar (6) Polyposis</a></li>
+                        <li><a href="">2020.06.02</a></li>
+                        <li class="cbl_notice"><a href="">공지</a></li>
+                        <li><a href="" class="cbl_txt">채혈실 운영 시간 안내</a></li>
+                        <li><a href="">2020.06.01</a></li>
+                        <li class="cbl_notice"><a href="">공지</a></li>
+                        <li><a href="" class="cbl_txt">식품의약품안전처 발표 메트포르민(당뇨약) 관련 안내</a></li>
+                        <li><a href="">2020.05.26</a></li>
+                    </ul>
+                    <ul class="con_bot_right">
+                        <li><a href="" class="cbr_ico come"><img src="/c1/samsungseoul/img/cbr_ico_come.png" alt="오시는길"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/cbr_ico_parking.png" alt="주차안내"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/cbr_ico_hosview.png" alt="병원둘러보기"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/cbr_ico_hoslog.png" alt="입원생활안내"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/cbr_ico_paper.png" alt="제증명발급/의무기록사본/대리처방"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/cbr_ico_cd.png" alt="외부영상CD등록"></a></li>
+                        <li><a href="">오시는 길</a></li>
+                        <li><a href="">주차안내</a></li>
+                        <li><a href="">병원둘러보기</a></li>
+                        <li><a href="">입원생활안내</a></li>
+                        <li><a href="">제증명발급/<br>의무기록사본/<br>대리처방</a></li>
+                        <li><a href="">외부영상 <br>CD등록</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="ft">
+            <div class="ft_top_wrap">
+                <div class="ft_top_wrap_left">
+                    <ul class="ft_top_menu_l">
+                        <li><a href="">삼성서울병원</a></li>
+                        <li><a href="">건강의학센터</a></li>
+                        <li><a href="">심장뇌혈관병원</a></li>
+                        <li><a href="">암병원</a></li>
+                        <li><a href="">양성자치료센터</a></li>
+                        <li><a href="">인재채용</a></li>
+                        <li><a href="">장례식장</a></li>
+                    </ul>
+                </div>
+                <div class="ft_top_wrap_right">
+                    <ul class="ft_top_menu_r">
+                        <li><a href="">▲센터홈페이지</a></li>
+                        <li><a href="">▲패밀리사이트</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft_bottom_wrap">
+                <div class="ft_bottom_wrap_left">
+                    <ul class="ft_bottom_menu_left">
+                        <li><a href="">병원소개</a></li>
+                        <li><a href="">회원약관</a></li>
+                        <li><a href="" class="privacy">개인정보처리방침</a></li>
+                        <li><a href="">보안신고</a></li>
+                        <li><a href="">환자의 권리와 의무</a></li>
+                        <li><a href="">제보하기</a></li>
+                        <li><a href="">비급여진료비안내</a></li>
+                        <li><a href="">원격지원</a></li>
+                        <li><a href="">고객의소리</a></li>
+                        <li><a href="">홈페이지가이드</a></li>
+                        <li><a href="">사이트맵</a></li>
+                        <span class="copyright">서울특별시 강남구 일원로 81 (06351) 삼성서울병원 / 대표전화 : 1599-3114 / 사업자등록번호 : 213-82-05096 권오정</span>
+                        <span class="copyright">COPYRIGHT©1996-2015 BY SAMSUNG MEDICAL CENTER. ALL RIGHTS RESERVED.</span>
+                    </ul>
+                </div>
+                <div class="ft_bottom_wrap_right">
+                    <ul>
+                        <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_logo1.png" alt="인증마크"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_logo2.png" alt="인증마크"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_logo3.png" alt="인증마크"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_twit.png" alt="삼성서울병원 트위터 바로가기"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_fb.png" alt="삼성서울병원 페이스북 바로가기"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_blog.png" alt="삼성서울병원 블로그 바로가기"></a></li>
+                        <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_youtube.png" alt="삼성서울병원 유튜브 바로가기"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 - 삼정서울병원</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic" rel="stylesheet">
+
+    <style>
+        * {margin: 0; padding: 0;}
+        body, html { width: 100%; min-width: 1280px; font-family: 'Nanum Gothic', sans-serif;}
+        ul { list-style: none;}
+        a {text-decoration: none;}
+
+        .wrap {width: 100%;}
+        .hd {width: 100%;}
+        .hd_wrap { display: block; width: 100vw; height: 100px; border-bottom: 1px solid #d8e2f4; margin: 0 auto;}
+        .hd_logo {width: 1280px; height: 35px;margin: 0 auto; margin-top: 30px;}
+        .hd_logo .logo { display: block; width: 200px; height: 35px; margin: 0 auto;}
+        .hd_info { clear: both; display: block; width: 450px; height: 50px; margin: 0 auto; text-align: center;}
+        .hd_info li { float: left; margin-top: 30px; font-size: 20px;}
+        .hd_info li:nth-child(2)::before {content: ">"; margin-left: 30px; margin-right: 30px; color: #3d6ec9; font-weight: 700;}
+        .hd_info li:nth-child(3)::before {content: ">"; margin-left: 30px; margin-right: 30px; color: #3d6ec9; font-weight: 700;}
+        .hd_info .page_tit {border-bottom: 2px solid #3d6ec9;height: 35px;}
+        .contents {width: 1280px; height: 600px; margin: 0 auto; border-bottom: 1px solid #ebf0f9;}
+        .contents .con_notice {margin-top: 40px; margin-bottom: 25px; font-weight: bold; font-size: 20px; color: #4074d5; text-align: center; line-height: 30px; }
+        .con_tit {clear: both; display: block; width: 1280px; height: 200px; margin: 0 auto; margin-bottom: 30px;}
+        .con_tit_inner {display: block; width: 600px; height: 200px; margin: 0 auto; border-top: 1px solid black; border-bottom: 1px solid black;}
+        .con_tit_inner .checkBox {display: block; width: 100px; height: 30px; float: left; margin-top: 35px; margin-bottom: 20px; }
+        .con_tit_inner label {display: block; width: 450px; height: 50px; float: left; font-size: 20px; margin-top: 35px; ;}
+        .text {clear: both; display: block; width: 600px;height: 30px; margin: 0 auto; font-size: 16px;}
+        .con_btn { clear: both; display: block; width: 600px; height: 100px; margin: 0 auto; margin-top: 30px;}
+        .con_btn li {float: left; text-align: center;}
+        .con_btn li:first-child {margin-right: 100px;}
+        .back {display: block; width: 150px; height: 45px; line-height: 3; border: 1px solid #3d6ec9; color: #3d6ec9; border-radius: 22.5px;}
+        .next {display: block; width: 340px; height: 45px; line-height: 3; border: 1px solid #3d6ec9; background: #3d6ec9; color: white; border-radius: 22.5px;}
+        .ft {clear: both; width: 100%;}
+        .ft_wrap { width: 600px; height: 80px; margin: 0 auto; margin-top: 20px;}
+        .ft_ico { width: 210px;height: 40px; margin: 0 auto; margin-top: 20px;}
+        .ft_ico li { float: left; margin: 0 auto; margin-right: 25px;}
+        .ft_info {clear: both; display: block; width: 340px; height: 16px; margin: 0 auto;}
+        .ft_info li {float: left;}
+        .ft_info li a {color: #898c93; font-size: 13px;}
+        .ft_info .ft_info_prive {color: #7498dc;}
+        .ft_info li:nth-child(1)::after {content: "|"; margin-left: 20px; margin-right: 20px;}
+        .ft_info li:nth-child(3)::before {content: "|"; margin-left: 20px; margin-right: 20px;}
+        .copyright { clear: both;width: 100vw; margin: 0 auto; text-align: center; color: #898c83; font-size: 10px;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_wrap">
+                <ul class="hd_logo">
+                    <a href="index.html" class="logo" ><img src="/c1/samsungseoul/img/logo.png" alt=""></a>
+                    <ul class="hd_info">
+                        <li class="page_tit">약관동의</li>
+                        <li>회원정보입력</li>
+                        <li>가입완료</li>
+                    </ul>
+                </ul>
+            </div>
+        </header>
+        <div class="contents">
+            <p class="con_notice">온라인채널(홈페이지/모바일웹, 앱) <br> 통합회원가입을 위한 이용 약관 동의,<br>개인정보 수집 및 이용 동의</p>
+            <div class="con_tit">
+                <ul class="con_tit_inner">
+                    <li><input type="checkbox" class="checkBox" id="ck1"></li>
+                    <li><label for="ck1">이용 약관 동의</label></li><br><br>
+                    <li><input type="checkbox" class="checkBox" id="ck2"></li>
+                    <li><label for="ck2">개인정보 수집 및 동의</label></li>
+                </ul>
+                <br><p class="text">※ 위의 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를</p>
+                <p class="text">거부할 경우 회원 가입 및 삼성서울병원 온라인 채널 (홈페이지/모바일 웹, 앱) 이용</p>
+                <p class="text">이 제한됩니다.</p>
+                <ul class="con_btn">
+                    <li><a href="join.html"class="back">이전</a></li>
+                    <li><a href="join3.html"class="next">다음</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <ul class="ft_ico">
+                    <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_logo1.png" alt="인증마크"></a></li>
+                    <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_logo2.png" alt="인증마크"></a></li>
+                    <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_logo3.png" alt="인증마크"></a></li>
+                </ul>
+                <ul class="ft_info">
+                    <li><a href="" class="ft_info_prive">개인정보처리방침</a></li>
+                    <li><a href="">회원약관</a></li>
+                    <li><a href="">환자의 권리와 의무</a></li>
+                </ul>
+            </div>
+            <p class="copyright">© SAMSUNG MEDICAL CENTER</p>
+        </footer>
+    </div>
+</body>
+</html>

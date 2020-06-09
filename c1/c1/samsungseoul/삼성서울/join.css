@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+body, html { width: 100px; min-width: 1280px; font-family: 'Nanum Gothic', sans-serif;}
+ul { list-style: none;}
+a {text-decoration: none;}
+.wrap { width: 100%;}
+.hd {width: 100%;}
+.hd_wrap {display: block;  width: 100vw; height: 170px; background: #3d6ec9; margin: 0 auto; }
+.logo {display: block; width: 220px; height: 35px; margin: 0 auto; padding-top: 40px;}
+.contents {clear: both; width: 1280px; height: 100px;}
+.join_box {position: relative;}
+.join_btn { display: block; width: 350px; height: 100px; margin: 0 auto; border-radius: 10px; box-shadow: 1px 1px 5px #d2d2d2; position: absolute; top: 130px; left: 780px; background: white;}
+.join_btn span { float: left; color: black; margin-left: 30px;margin-top: 15px;}
+.join_btn .join_btn_txt {clear: both; color: #3d6ec9;}
+.join_btn .join_btn_img {float: right; position: fixed; left: 1000px; top: 135px;}
+.ft {clear: both; width: 100%;}
+.ft_wrap { width: 100vw; margin: 0 auto;}
+.ft_ico { width: 210px;height: 40px; margin: 0 auto; margin-top: 20px;}
+.ft_ico li { float: left; margin: 0 auto; margin-right: 25px;}
+.ft_info {clear: both; display: block; width: 340px; height: 16px; margin: 0 auto;}
+.ft_info li {float: left;}
+.ft_info li a {color: #898c93; font-size: 13px;}
+.ft_info .ft_info_prive {color: #7498dc;}
+.ft_info li:nth-child(1)::after {content: "|"; margin-left: 20px; margin-right: 20px;}
+.ft_info li:nth-child(3)::before {content: "|"; margin-left: 20px; margin-right: 20px;}
+.copyright { clear: both;width: 100vw; margin: 0 auto; text-align: center; color: #898c83; font-size: 10px;}

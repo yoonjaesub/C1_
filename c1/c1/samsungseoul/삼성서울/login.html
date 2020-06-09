@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통합회원 로그인</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic" rel="stylesheet">
+
+    <style>
+        * {margin: 0; padding: 0;}
+        body, html { width: 100%; min-width: 1280px; font-family: 'Nanum Gothic', sans-serif; background: #f2f3f7}
+        ul { list-style: none;}
+        a {text-decoration: none;}
+        .wrap {width: 100%; }
+        .hd {width: 100%; clear: both;}
+        .hd_wrap {display: block; width: 1280px; height: 70px; margin: 0 auto; text-align: center; margin-top: 50px;}
+        .contents { clear: both; display: block; width: 1280px; height: 300px; margin: 0 auto; text-align: center; border-bottom: 1px solid #e0e5f2;}
+        .login_box {width: 400px; margin: 0 auto;}
+        .login_id { width: 400px; height: 50px; border-top-left-radius: 10px; border-top-right-radius: 10px; font-size: 16px; text-indent: 20px;}
+        .login_pw { width: 400px;height: 50px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; font-size: 16px; text-indent: 20px;}
+        .save_id {clear: both; display: block; text-align: left; width: 400px; margin-top: 20px;}
+        .login_btn {clear: both; display: block; width: 400px; height: 30px; background: #4074d5; margin-top: 20px; line-height: 2; border-radius: 15px; color: white;}
+        .find_join { clear: both; display: block; width: 400px; height: 50px; margin-top: 20px;}
+        .find_join li { float: left;}
+        .find_join li a {color: black; margin-left: 20px;}
+        .find_join li:nth-child(1)::after {content: "|"; margin-left: 20px;}
+        .find_join li:nth-child(3)::before {content: "|"; margin-left: 20px;}
+        .ft {width: 100%;}
+        .ft_wrap { width: 1280px; margin: 0 auto;}
+        .ft_ico { width: 210px;height: 40px; margin: 0 auto; margin-top: 20px;}
+        .ft_ico li { float: left; margin: 0 auto; margin-right: 25px;}
+        .ft_info {clear: both; display: block; width: 340px; height: 16px; margin: 0 auto;}
+        .ft_info li {float: left;}
+        .ft_info li a {color: #898c93; font-size: 13px;}
+        .ft_info .ft_info_prive {color: #7498dc;}
+        .ft_info li:nth-child(1)::after {content: "|"; margin-left: 20px; margin-right: 20px;}
+        .ft_info li:nth-child(3)::before {content: "|"; margin-left: 20px; margin-right: 20px;}
+        .copyright { clear: both; display: block; margin: 0 auto;width: 150px; color: #898c83; font-size: 10px; margin-top: 20px;}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_wrap">
+                <a href="index.html"><img src="/c1/samsungseoul/img/logo.png" alt="기업로고"></a>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="login_box"> 
+                <input type="text" class="login_id" placeholder="아이디">
+                <input type="text" class="login_pw" placeholder="비밀번호">
+                <div class="save_id">
+                    <input type="checkbox" id="saveid">
+                    <label for="saveid">아이디 저장</label>
+                </div>
+                <a href="" class="login_btn">로그인</a>
+                <ul class="find_join">
+                    <li><a href="">아이디 찾기</a></li>
+                    <li><a href="">비밀번호 찾기</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="ft">
+            <div class="ft_wrap">
+                <ul class="ft_ico">
+                    <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_logo1.png" alt="인증마크"></a></li>
+                    <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_logo2.png" alt="인증마크"></a></li>
+                    <li><a href=""><img src="/c1/samsungseoul/img/ft_ico_logo3.png" alt="인증마크"></a></li>
+                </ul>
+                <ul class="ft_info">
+                    <li><a href="" class="ft_info_prive">개인정보처리방침</a></li>
+                    <li><a href="">회원약관</a></li>
+                    <li><a href="">환자의 권리와 의무</a></li>
+                </ul>
+            </div>
+            <p class="copyright">© SAMSUNG MEDICAL CENTER</p>
+        </footer>
+    </div>
+</body>
+</html>
